@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Katholische öffentliche Bücherei Hl. Dreieinigkeit Bilfingen</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="import" href="fragments/navbar.html">
+</head>
+<body style="padding-top: 50px">
+<header id="site-header"></header>
+<div class="container-fluid" id="content">
+    <h1>Katholische öffentliche Bücherei Hl. Dreieinigkeit Bilfingen</h1>
+    <h4>Ebbstra&szlig;e - 75236 Kämpfelbach - Bücherei unter der katholischen Kirche</h4>
+     [jetzt auch auf <a href="http://www.facebook.com/" target="_blank">www.facebook.com</a> unter
+    <span style="color: dodgerblue">Bücherei Hl. Dreieinigkeit Bilfingen</span>]
+oder mit diesem Link: <a href="https://www.facebook.com/buecherei.bilfingen">https://www.facebook.com/buecherei.bilfingen</a>
+</div>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var content = document.querySelector('link[rel="import"]').import;
+    var navigation = content.querySelector('#menubar');
+    document.querySelector('#site-header').appendChild(navigation.cloneNode(true));
+</script>
+</body>
+</html>
