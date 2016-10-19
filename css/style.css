@@ -1,5 +1,25 @@
-body {
-    padding-top: 70px;
+@media (max-width: 1399px) {
+    body {
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 70px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        padding-top: 70px;
+    }
 }
 
 .bottom-aligned {
