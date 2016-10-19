@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Katholische öffentliche Bücherei Hl. Dreieinigkeit Bilfingen</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="import" href="fragments/navbar.html">
 </head>
-<body style="padding-top: 50px">
+<body>
 <header id="site-header"></header>
 <div class="container-fluid" id="content">
     <div class="text-left">
@@ -58,10 +59,6 @@
 </div>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    var content = document.querySelector('link[rel="import"]').import;
-    var navigation = content.querySelector('#menubar');
-    document.querySelector('#site-header').appendChild(navigation.cloneNode(true));
-</script>
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
