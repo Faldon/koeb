@@ -4,6 +4,12 @@
     }
 }
 
+@media (max-width: 767px) {
+    body {
+        padding-top: 90px;
+
+    }
+}
 @media (min-width: 1188px) {
     body {
         padding-top: 150px;
