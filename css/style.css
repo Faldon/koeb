@@ -22,6 +22,11 @@
     float: none;
 }
 
+.horizontal-padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .bg-orange {
     background-color: orange;
 }
