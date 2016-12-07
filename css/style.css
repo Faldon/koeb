@@ -27,22 +27,15 @@
     padding-bottom: 5px;
 }
 
-.bg-orange {
-    background-color: orange;
-}
-
-.bg-yellow {
-    background-color: yellow;
-}
-
-.bg-red {
-    background-color: red;
-}
-
-.bg-white {
-    background-color: white;
-}
-
 .no-padding {
     padding: 0;
+}
+
+.opac-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.opac-list li:before {
+    content: "- ";
 }
