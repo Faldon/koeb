@@ -1,3 +1,9 @@
+@media (max-width: 1550px) {
+    body {
+        padding-top: 150px;
+    }
+}
+
 @media (min-width: 1551px) {
     body {
         padding-top: 90px;
@@ -11,15 +17,9 @@
     }
 }
 
-@media (max-width: 1193px) {
+@media (max-width: 1181px) {
     body {
         padding-top: 220px;
-    }
-}
-
-@media (max-width: 1550px) {
-    body {
-        padding-top: 150px;
     }
 }
 

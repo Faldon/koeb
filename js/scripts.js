@@ -86,8 +86,7 @@ if(content !== undefined) {
     rawFile.open("GET", "fragments/navbar.html", true);
     rawFile.onreadystatechange = function () {
         if(rawFile.readyState === 4) {
-            var allText = rawFile.responseText;
-            document.querySelector('#site-header').innerHTML = allText;
+            document.querySelector('#site-header').innerHTML = rawFile.responseText;
         }
     };
     rawFile.send();
@@ -99,6 +98,18 @@ Array.from(document.getElementsByTagName("li")).forEach(function(item) {
     }
 });
 
-$().ready(function() {
-    console.log(navigator.userAgent);
-});
+function addCSSMaxWidth() {
+    if(window.innerHeight < document.body.scrollHeight) {
+        var scrollbarWidth = window.innerWidth - document.body.clientWidth;
+        var maxWidth = scrollbarWidth + 1181;
+        var rule = "@media (max-width: " + maxWidth + "px) {body {padding-top: 220px;}}";
+        var style = window.document.createElement('style');
+        window.document.head.appendChild(style);
+        style.innerHTML = rule;
+    }
+}
+
+if(navigator.userAgent.indexOf("MSIE") == -1 && navigator.userAgent.indexOf("Firefox") == -1) {
+    window.onload = addCSSMaxWidth();
+    document.body.onresize = addCSSMaxWidth();
+}
