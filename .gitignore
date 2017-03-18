@@ -96,3 +96,4 @@ fabric.properties
 
 .gitignore
 .idea/
+.directory
