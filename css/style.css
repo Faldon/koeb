@@ -46,3 +46,18 @@
 .opac-list li:before {
     content: "- ";
 }
+
+ol.toc-list {
+    counter-reset: item;
+    -webkit-padding-start: 20px;
+    padding-left: 20px;
+}
+
+ol.toc-list li {
+    display: block
+}
+
+ol.toc-list li:before {
+    content: counters(item, ".")" ";
+    counter-increment: item
+}
