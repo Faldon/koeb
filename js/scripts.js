@@ -81,12 +81,16 @@ var content = document.querySelector('link[rel="import"]').import;
 if(content !== undefined) {
     var navigation = content.querySelector('#menubar');
     document.querySelector('#site-header').appendChild(navigation.cloneNode(true));
+    var footer = content.querySelector('#footer');
+    document.querySelector('#site-footer').appendChild(footer.cloneNode(true));
 } else {
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", "fragments/navbar.html", true);
+    rawFile.overrideMimeType('text/xml');
     rawFile.onreadystatechange = function () {
-        if(rawFile.readyState === 4) {
-            document.querySelector('#site-header').innerHTML = rawFile.responseText;
+        if(rawFile.readyState === 4 && rawFile.responseXML != null) {
+            document.querySelector('#site-header').innerHTML = rawFile.responseXML.querySelector('#menubar');
+            document.querySelector('#site-footer').innerHTML = rawFile.responseXML.querySelector('#footer');
         }
     };
     rawFile.send();
