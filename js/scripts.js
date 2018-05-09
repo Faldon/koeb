@@ -77,23 +77,32 @@ if (!Array.from) {
     }());
 }
 
-var content = document.querySelector('link[rel="import"]').import;
-if(content !== undefined) {
-    var navigation = content.querySelector('#menubar');
-    document.querySelector('#site-header').appendChild(navigation.cloneNode(true));
-    var footer = content.querySelector('#footer');
-    document.querySelector('#site-footer').appendChild(footer.cloneNode(true));
+var navbar = document.querySelectorAll('link[rel="import"]')[0].import;
+if(navbar !== undefined) {
+    document.querySelector('#site-header').appendChild(navbar.querySelector('#menubar').cloneNode(true));
 } else {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", "fragments/navbar.html", true);
-    rawFile.overrideMimeType('text/xml');
-    rawFile.onreadystatechange = function () {
-        if(rawFile.readyState === 4 && rawFile.responseXML != null) {
-            document.querySelector('#site-header').innerHTML = rawFile.responseXML.querySelector('#menubar');
-            document.querySelector('#site-footer').innerHTML = rawFile.responseXML.querySelector('#footer');
+    var navbarFragment = new XMLHttpRequest();
+    navbarFragment.open("GET", "fragments/navbar.html", true);
+    navbarFragment.onreadystatechange = function () {
+        if(navbarFragment.readyState === 4) {
+            document.querySelector('#site-header').innerHTML = navbarFragment.responseText;
         }
     };
-    rawFile.send();
+    navbarFragment.send();
+}
+
+var footer = document.querySelectorAll('link[rel="import"]')[1].import;
+if(footer !== undefined) {
+    document.querySelector('#site-footer').appendChild(footer.querySelector('#footer').cloneNode(true));
+} else {
+    var footerFragment = new XMLHttpRequest();
+    footerFragment.open("GET", "fragments/footer.html", true);
+    footerFragment.onreadystatechange = function () {
+        if(footerFragment.readyState === 4) {
+            document.querySelector('#site-footer').innerHTML = footerFragment.responseText;
+        }
+    };
+    footerFragment.send();
 }
 
 Array.from(document.getElementsByTagName("li")).forEach(function(item) {
