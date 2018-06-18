@@ -123,6 +123,6 @@ function addCSSMaxWidth() {
 }
 
 if(navigator.userAgent.indexOf("MSIE") == -1 && navigator.userAgent.indexOf("Firefox") == -1) {
-    window.onload = addCSSMaxWidth();
-    document.body.onresize = addCSSMaxWidth();
+    // window.onload = addCSSMaxWidth();
+    // document.body.onresize = addCSSMaxWidth();
 }
