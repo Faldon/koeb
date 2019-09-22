@@ -33,14 +33,14 @@
 
 @media (max-width: 900px) {
     body {
-        padding-top: 180px;
+        padding-top: 240px;
         margin-bottom: 40px;
     }
 }
 
 @media (min-width: 901px) {
     body {
-        padding-top: 140px;
+        padding-top: 200px;
         margin-bottom: 40px;
     }
 }
