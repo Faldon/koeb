@@ -31,13 +31,6 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@media (max-width: 900px) {
-    body {
-        padding-top: 225px;
-        margin-bottom: 40px;
-    }
-}
-
 @media (min-width: 901px) {
     body {
         padding-top: 185px;
@@ -45,9 +38,23 @@
     }
 }
 
+@media (max-width: 900px) {
+    body {
+        padding-top: 225px;
+        margin-bottom: 40px;
+    }
+}
+
 @media (max-width: 767px) {
     body {
         padding-top: 145px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 588px) {
+    body {
+        padding-top: 175px;
         margin-bottom: 40px;
     }
 }
