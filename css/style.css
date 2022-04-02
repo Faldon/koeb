@@ -1,104 +1,111 @@
-/* latin-ext */
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'Public Sans', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    src: local('Raleway'), local('Raleway-Regular'), url(../fonts/Raleway_latin-ext_400.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-weight: bold;
+    src: url("../fonts/PublicSans-Bold.woff2") format('woff2');
 }
-/* latin */
+
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'Public Sans', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    src: local('Raleway'), local('Raleway-Regular'), url(../fonts/Raleway_latin_400.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Raleway Bold'), local('Raleway-Bold'), url(../fonts/Raleway_latin-ext_700.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Raleway Bold'), local('Raleway-Bold'), url(../fonts/Raleway_latin_700.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-weight: normal;
+    src: url("../fonts/PublicSans-Regular.woff2") format('woff2');
 }
 
-@media (min-width: 781px) {
-    body {
-        padding-top: 165px;
-        margin-bottom: 40px;
-    }
+body {
+    font-family: 'Public Sans', sans-serif;
 }
 
-@media (max-width: 780px) {
-    body {
-        padding-top: 205px;
-        margin-bottom: 40px;
-    }
+#menubar {
+    background-color: #7a7d82;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
 }
 
-@media (max-width: 767px) {
-    body {
-        padding-top: 125px;
-        margin-bottom: 40px;
-    }
+.navbar-light .navbar-nav .nav-link {
+    color: #a1c94b;
 }
 
-@media (max-width: 588px) {
-    body {
-        padding-top: 175px;
-        margin-bottom: 40px;
-    }
+.dropdown-menu {
+    background-color: #4f8c1c;
 }
 
-.bottom-aligned {
-    display: inline;
-    vertical-align: bottom;
-    float: none;
+.dropdown-item.nav-link {
+    color: black!important;
 }
 
-.horizontal-padding {
-    padding-top: 5px;
-    padding-bottom: 5px;
+#content {
+    margin-top: 2.5em;
 }
 
-.no-padding {
-    padding: 0;
-}
+/*@media (min-width: 781px) {*/
+/*    body {*/
+/*        padding-top: 165px;*/
+/*        margin-bottom: 40px;*/
+/*    }*/
+/*}*/
 
-.opac-list {
-    list-style-type: none;
-    padding-left: 0;
-}
+/*@media (max-width: 780px) {*/
+/*    body {*/
+/*        padding-top: 205px;*/
+/*        margin-bottom: 40px;*/
+/*    }*/
+/*}*/
 
-.opac-list li:before {
-    content: "- ";
-}
+/*@media (max-width: 767px) {*/
+/*    body {*/
+/*        padding-top: 125px;*/
+/*        margin-bottom: 40px;*/
+/*    }*/
+/*}*/
 
-ol.toc-list {
-    counter-reset: item;
-    -webkit-padding-start: 20px;
-    padding-left: 20px;
-}
+/*@media (max-width: 588px) {*/
+/*    body {*/
+/*        padding-top: 175px;*/
+/*        margin-bottom: 40px;*/
+/*    }*/
+/*}*/
 
-ol.toc-list li {
-    display: block
-}
+/*.bottom-aligned {*/
+/*    display: inline;*/
+/*    vertical-align: bottom;*/
+/*    float: none;*/
+/*}*/
 
-ol.toc-list li:before {
-    content: counters(item, ".")" ";
-    counter-increment: item
-}
+/*.horizontal-padding {*/
+/*    padding-top: 5px;*/
+/*    padding-bottom: 5px;*/
+/*}*/
 
-#site-footer > .navbar {
-    min-height: 40px;
-    height: 40px;
-}
+/*.no-padding {*/
+/*    padding: 0;*/
+/*}*/
+
+/*.opac-list {*/
+/*    list-style-type: none;*/
+/*    padding-left: 0;*/
+/*}*/
+
+/*.opac-list li:before {*/
+/*    content: "- ";*/
+/*}*/
+
+/*ol.toc-list {*/
+/*    counter-reset: item;*/
+/*    -webkit-padding-start: 20px;*/
+/*    padding-left: 20px;*/
+/*}*/
+
+/*ol.toc-list li {*/
+/*    display: block*/
+/*}*/
+
+/*ol.toc-list li:before {*/
+/*    content: counters(item, ".")" ";*/
+/*    counter-increment: item*/
+/*}*/
+
+/*#site-footer > .navbar {*/
+/*    min-height: 40px;*/
+/*    height: 40px;*/
+/*}*/

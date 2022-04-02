@@ -7,86 +7,96 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="import" href="fragments/navbar.html">
-    <link rel="import" href="fragments/footer.html">
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
-<body>
+<body  data-name="home">
 <noscript>
     <div class="jumbotron text-center">
         <h3 class="text-danger">Diese Seite benötigt JavaScript. Bitte aktivieren Sie dieses in Ihrem Browser.</h3>
     </div>
 </noscript>
 <header id="site-header"></header>
-<div class="container-fluid" id="content">
-    <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 text-center">
-            <h2>Büchereiräume sind aktuell für den Publikumsverkehr geschlossen.</h2>
-            <h3>Wir bieten Ihnen den Abhol- und Rückgabeservice an</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-5">
+<div class="container" id="content">
+    <div class="row justify-content-start">
+        <div class="col-7">
+            <h1>Herzlich Wilkommen</h1>
             <p>
-                Liebe Leser.<br />
-                schweren Herzens haben wir uns entschlossen, die Bücherei ab Mittwoch, den 2. Februar 2022 vorübergehend
-                für den Publikumsverkehr zu schließen.
+                Es erwartet Sie eine attraktive B&uuml;cherei mit rund 17.000 Medien vor Ort.
+                W&auml;hlen Sie aus Romanen, Sachb&uuml;chern, Jugendb&uuml;chern und Kinderb&uuml;chern das Passende f&uuml;r sich aus.
+                Auch viele Zeitschriften, Spiele, H&ouml;rb&uuml;cher, Filme und Comics finden Sie bei uns.
+                Unser Medienangebot steht allen, gleich welcher Konfession oder Herkunft zur Verf&uuml;gung.
+                Wir verstehen uns als ein Ort der Begegnung und freuen uns auf Ihren Besuch bei uns in der B&uuml;cherei.
             </p>
             <p>
-                Für Ihre Versorgung mit Lesestoff oder anderen Medien bieten wir in dieser Zeit unseren bereits bekannten
-                Abhol- und Rückgabeservice. Dies gilt voraussichtlich bis Ende März.
-                Detailliertere Informationen unter „Aktuelles“.<br />
-                Veränderungen erfahren Sie auch hier und in den Mitteilungsblättern.
+                Lesen oder h&ouml;ren Sie lieber digital, so finden Sie unter
+                <a href="http://www2.onleihe.de/libell-e-sued/frontend/login,0-0-0-800-0-0-0-0-0-0-0.html?libraryId=1543" target="_blank">Onleihe Libell-e</a>
+                &uuml;ber 19.000 Medien als eBooks, eAudios oder ePapers.
             </p>
+        </div>
+        <div class="col-5">
+            <img alt="Kirche" src="images/1_Bilder_Startseite/Bild_Dreieinigkeitskirche.jpg" />
+        </div>
+    </div>
+    <div class="row justify-content-start">
+        <div class="col-7">
+            <h1>Leih' dir was:</h1>
             <p>
-                Bleiben Sie gesund und zuversichtlich.<br />
-                Ihr Büchereiteam.
+                Lese- und Spiele-Tipps der B&uuml;cherei Bilfingen<br />
+                Unser Medienbestand in allen Bereichen wird laufend erneuert, um das Angebot f&uuml;r Sie attraktiv zu halten.
+                Medienw&uuml;nsche von ihrer Seite k&ouml;nnen Sie uns gerne &uuml;ber Medienwunsch mitteilen.
             </p>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-6">
-            <h3><u>Öffnungszeiten</u></h3>
-            <div class="col-sm-3 no-padding"><h5>Mittwochs</h5></div>
-            <div class="col-sm-9"><h5>16:00 - 18:00 Uhr</h5></div>
-            <div class="col-sm-3 no-padding"><h5>Freitags</h5></div>
-            <div class="col-sm-9"><h5>16:00 - 18:00 Uhr</h5></div>
-            <div class="col-sm-3 no-padding"><h5>Sonntags</h5></div>
-            <div class="col-sm-9"><h5>10:30 - 12 Uhr</h5></div>
-            <div class="row"></div>
-            <h5>Am 24.12., 26.12. und 31.12. bleibt die Bücherei geschlossen.</h5>
-            <h4><strong>
-                Es erwartet Sie eine attraktive Bücherei mit rund 17.000 Medien +
-                Onleihe (eBook, eAudio, ePaper).
-            </strong></h4>
-            <div class="col-sm-3 no-padding">Telefon</div>
-            <div class="col-sm-9">07232 3134 200</div>
-            <div class="col-sm-3 no-padding">Email</div>
-            <div class="col-sm-9"><a href="mailto:info@buecherei-bilfingen.de">info@buecherei-bilfingen.de</a></div>
-            <div class="col-sm-3 no-padding">Homepage</div>
-            <div class="col-sm-9"><a href="http://www.buecherei-bilfingen.de">www.buecherei-bilfingen.de</a></div>
-        </div>
     </div>
-    <hr />
-    <div class="row">
-        <a class="btn btn-info col-sm-offset-4"
-           href="https://www.google.de/maps/place/B%C3%BCcherei+Hl.+Dreieinigkeit/@48.9484583,8.6196515,141m/data=!3m1!1e3!4m5!3m4!1s0x47970cb316a37c8d:0x5657a3be1737511f!8m2!3d48.9484548!4d8.6199546!6m1!1e1"
-           target="_blank">Weg zur Bücherei anzeigen</a>
-<!--        <ul class="nav navbar-nav">-->
-<!--            <li>-->
-<!--                <a class="btn btn-info"-->
-<!--                   href="https://www.google.de/maps/place/B%C3%BCcherei+Hl.+Dreieinigkeit/@48.9484583,8.6196515,141m/data=!3m1!1e3!4m5!3m4!1s0x47970cb316a37c8d:0x5657a3be1737511f!8m2!3d48.9484548!4d8.6199546!6m1!1e1"-->
-<!--                   target="_blank">Weg zur Bücherei anzeigen</a>-->
-<!--            </li>-->
-<!--        </ul>-->
+    <div class="row justify-content-around">
+                <div class="col-1 text-center">
+                    <img src="images/1631e05e968f7e09bc08a668c485790d.jpg" class="d-block w-100" alt="Kind">
+                    Kind
+                </div>
+                <div class="col-1 text-center">
+                    <img src="images/37801467.jpg" class="d-block w-100" alt="Jugend">
+                    Jugend
+                </div>
+                <div class="col-1 text-center">
+                    <img src="images/Evans_RVeraenderte_Vergangenheiten_145399.jpg" class="d-block w-100" alt="Sachbuch">
+                    Sachbuch
+                </div>
+                <div class="col-1 text-center">
+                    <img src="images/59921532z.jpg" class="d-block w-100" alt="Erwachsene">
+                    Erwachsene
+                </div>
+                <div class="col-1 text-center">
+                    <img src="images/SCHLUEMPFE_39_lp_Cover_900px.jpg" class="d-block w-100" alt="Comics">
+                    Comics
+                </div>
+                <div class="col-1 text-center">
+                    <img src="images/pic3718275.jpg" class="d-block w-100" alt="Spiele">
+                    Spiele
+                </div>
+                <div class="col-1 text-center">
+                    <img src="images/1061007.jpg" class="d-block w-100" alt="CD/DVD">
+                    CD/DVD
+                </div>
     </div>
-<!--    <div class="row">-->
-<!--        <div class="col-sm-12">-->
-<!--            <img class="img-responsive" src="images/1_Bilder_Startseite/Route_zur_Koeb.jpg"-->
-<!--                 title="Satellitenbild Bücherei"-->
-<!--                 alt="Satellitenbild der katholischen Kirche in Bilfingen" />-->
-<!--        </div>-->
-<!--    </div>-->
 </div>
-<footer id="site-footer"></footer>
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
+<!--<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>-->
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    let items = document.querySelectorAll('.carousel .carousel-item')
+
+    items.forEach((el) => {
+        // number of slides per carousel-item
+        const minPerSlide = 4
+        let next = el.nextElementSibling
+        for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = items[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+        }
+    })
+</script>
 </body>
 </html>
