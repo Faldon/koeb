@@ -37,7 +37,7 @@ body {
 .dropdown-item.nav-link:active,
 .dropdown-item.nav-link.active {
     color: black!important;
-    background-color: #797c81 !important;
+    background-color: #b5b9c1 !important;
 }
 
 #content {
