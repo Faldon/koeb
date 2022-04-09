@@ -34,6 +34,12 @@ body {
     color: black!important;
 }
 
+.dropdown-item.nav-link:active,
+.dropdown-item.nav-link.active {
+    color: black!important;
+    background-color: #797c81 !important;
+}
+
 #content {
     margin-top: 2.5em;
 }
@@ -42,6 +48,15 @@ body {
     text-align: center;
     border: solid 0.25em #a1c94b;
     padding: 1em;
+}
+
+#corona-link {
+    cursor: pointer;
+}
+
+#corona-link a {
+    text-decoration: none;
+    color: black;
 }
 
 #book-carousel-header {

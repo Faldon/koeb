@@ -94,10 +94,11 @@ if(navbar !== undefined) {
 function setActiveLink() {
     Array.from(document.querySelectorAll("#menubar .nav-link")).forEach(function(item) {
         item.className.replace('active', '');
-        if(document.body['dataset'].name.match(new RegExp(item.id,'i'))) {
+        const match = document.body['dataset'].name.match(new RegExp(item.id,'i')) || [''];
+        if(match[0] !== '') {
             item.className += " active";
         }
     });
 }
 
-// window.onload = () => setActiveLink();
+window.onload = () => setActiveLink();
