@@ -27,7 +27,7 @@ body {
 }
 
 .dropdown-menu {
-    background-color: #4f8c1c;
+    background-color: #97e21c;
 }
 
 .dropdown-item.nav-link {
@@ -80,7 +80,7 @@ body {
     display: block;
 }
 
-@media (max-width: 1285px) {
+@media (max-width: 1120px) {
     .post-it-framework {
         display: none!important;
     }
