@@ -38,6 +38,39 @@ body {
     margin-top: 2.5em;
 }
 
+.post-it-framework {
+    position: absolute;
+    top: -3.5em;
+    left: 3em;
+    border: solid 1px black;
+    padding: 2px;
+    height: 10em;
+    width: 8.5em;
+    background: #97e21c;
+    transform: rotate(-12.5deg);
+}
+
+.post-it-framework > .post-it {
+    position: fixed;
+    top: 2.5%;
+    left: -4%;
+    border: solid 1px black;
+    padding: 2px;
+    height: 12em;
+    width: 11em;
+    background: #97e21c;
+    transform: rotate(3deg);
+    font-weight: lighter;
+    font-size: smaller;
+    text-align: center;
+}
+
+@media (max-width: 1285px) {
+    .post-it-framework {
+        display: none!important;
+    }
+}
+
 /*@media (min-width: 781px) {*/
 /*    body {*/
 /*        padding-top: 165px;*/
