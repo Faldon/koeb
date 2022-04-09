@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Katholische öffentliche Bücherei Hl. Dreieinigkeit Bilfingen</title>
+    <title>Katholische &ouml;ffentliche B&uuml;cherei Hl. Dreieinigkeit Bilfingen</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="import" href="fragments/navbar.html">
@@ -12,20 +12,28 @@
 <body  data-name="home">
 <noscript>
     <div class="jumbotron text-center">
-        <h3 class="text-danger">Diese Seite benötigt JavaScript. Bitte aktivieren Sie dieses in Ihrem Browser.</h3>
+        <h3 class="text-danger">Diese Seite ben&ouml;tigt JavaScript. Bitte aktivieren Sie dieses in Ihrem Browser.</h3>
     </div>
 </noscript>
 <header id="site-header"></header>
 <div class="container" id="content">
     <div class="row justify-content-start">
-        <div class="col-7">
+        <div id="opening-notice" class="col-5">
+            Die Auffrischung unserer B&uuml;cherei ist soweit abgeschlossen. Wir haben wieder<br />
+            <span class="eye-catcher">Ge&ouml;ffnet</span>
+            Gleichzeitig haben wir viele neue druckfrische B&uuml;cher und Zeitschriften f&uuml;r sie eingekauft, die darauf warten
+            von ihnen entdeckt zu werden.<br />
+            Kommen sie vorbei. Wir freuen uns auf sie.
+        </div>
+        <div id="index-image" class="col-2">
+            <img class="img-fluid" src="images/library_heart.jpg" alt="B&uuml;cherei mit Herz" />
+        </div>
+        <div id="welcome-message" class="col-5">
             <h1>Herzlich Wilkommen</h1>
             <p>
-                Es erwartet Sie eine attraktive B&uuml;cherei mit rund 17.000 Medien vor Ort.
-                W&auml;hlen Sie aus Romanen, Sachb&uuml;chern, Jugendb&uuml;chern und Kinderb&uuml;chern das Passende f&uuml;r sich aus.
-                Auch viele Zeitschriften, Spiele, H&ouml;rb&uuml;cher, Filme und Comics finden Sie bei uns.
+                Es erwartet Sie eine attraktive B&uuml;cherei mit rund 17.000 Medien vor Ort.<br />
                 Unser Medienangebot steht allen, gleich welcher Konfession oder Herkunft zur Verf&uuml;gung.
-                Wir verstehen uns als ein Ort der Begegnung und freuen uns auf Ihren Besuch bei uns in der B&uuml;cherei.
+                Wir verstehen uns als ein Ort der Begegnung und  freuen uns auf Ihren Besuch bei uns in der B&uuml;cherei.
             </p>
             <p>
                 Lesen oder h&ouml;ren Sie lieber digital, so finden Sie unter
@@ -33,49 +41,45 @@
                 &uuml;ber 19.000 Medien als eBooks, eAudios oder ePapers.
             </p>
         </div>
-        <div class="col-5">
-            <img alt="Kirche" src="images/1_Bilder_Startseite/Bild_Dreieinigkeitskirche.jpg" />
-        </div>
     </div>
-    <div class="row justify-content-start">
-        <div class="col-7">
-            <h1>Leih' dir was:</h1>
-            <p>
-                Lese- und Spiele-Tipps der B&uuml;cherei Bilfingen<br />
-                Unser Medienbestand in allen Bereichen wird laufend erneuert, um das Angebot f&uuml;r Sie attraktiv zu halten.
-                Medienw&uuml;nsche von ihrer Seite k&ouml;nnen Sie uns gerne &uuml;ber Medienwunsch mitteilen.
-            </p>
-        </div>
+    <div id="book-carousel-header" class="row justify-content-start">
+        <h1>Leih' dir was:</h1>
+        <p>
+            W&auml;hlen Sie aus Romanen, Sachb&uuml;chern, Jugendb&uuml;chern und Kinderb&uuml;chern das passende
+            f&uuml;r sich aus. Auch viele Zeitschriften, Spiele, H&ouml;rb&uuml;cher, Filme und Comics finden sie bei uns.<br />
+            Unser Medienbestand in allen Bereichen wird laufend erneuert um das Angebot f&uuml;r sie attraktiv zu halten.
+            Medienw&uuml;nsche von ihrer Seite nehmen wir gerne entgegen.
+        </p>
     </div>
-    <div class="row justify-content-around">
-                <div class="col-1 text-center">
-                    <img src="images/1631e05e968f7e09bc08a668c485790d.jpg" class="d-block w-100" alt="Kind">
-                    Kind
-                </div>
-                <div class="col-1 text-center">
-                    <img src="images/37801467.jpg" class="d-block w-100" alt="Jugend">
-                    Jugend
-                </div>
-                <div class="col-1 text-center">
-                    <img src="images/Evans_RVeraenderte_Vergangenheiten_145399.jpg" class="d-block w-100" alt="Sachbuch">
-                    Sachbuch
-                </div>
-                <div class="col-1 text-center">
-                    <img src="images/59921532z.jpg" class="d-block w-100" alt="Erwachsene">
-                    Erwachsene
-                </div>
-                <div class="col-1 text-center">
-                    <img src="images/SCHLUEMPFE_39_lp_Cover_900px.jpg" class="d-block w-100" alt="Comics">
-                    Comics
-                </div>
-                <div class="col-1 text-center">
-                    <img src="images/pic3718275.jpg" class="d-block w-100" alt="Spiele">
-                    Spiele
-                </div>
-                <div class="col-1 text-center">
-                    <img src="images/1061007.jpg" class="d-block w-100" alt="CD/DVD">
-                    CD/DVD
-                </div>
+    <div id="book-carousel-content" class="row justify-content-around">
+            <div class="col-1 text-center">
+                <img src="images/1631e05e968f7e09bc08a668c485790d.jpg" class="d-block w-100" alt="Kind">
+                Kind
+            </div>
+            <div class="col-1 text-center">
+                <img src="images/37801467.jpg" class="d-block w-100" alt="Jugend">
+                Jugend
+            </div>
+            <div class="col-1 text-center">
+                <img src="images/Evans_RVeraenderte_Vergangenheiten_145399.jpg" class="d-block w-100" alt="Sachbuch">
+                Sachbuch
+            </div>
+            <div class="col-1 text-center">
+                <img src="images/59921532z.jpg" class="d-block w-100" alt="Erwachsene">
+                Erwachsene
+            </div>
+            <div class="col-1 text-center">
+                <img src="images/SCHLUEMPFE_39_lp_Cover_900px.jpg" class="d-block w-100" alt="Comics">
+                Comics
+            </div>
+            <div class="col-1 text-center">
+                <img src="images/pic3718275.jpg" class="d-block w-100" alt="Spiele">
+                Spiele
+            </div>
+            <div class="col-1 text-center">
+                <img src="images/1061007.jpg" class="d-block w-100" alt="CD/DVD">
+                CD/DVD
+            </div>
     </div>
 </div>
 <!--<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>-->

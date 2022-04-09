@@ -38,6 +38,16 @@ body {
     margin-top: 2.5em;
 }
 
+#opening-notice {
+    text-align: center;
+    border: solid 0.25em #a1c94b;
+    padding: 1em;
+}
+
+#book-carousel-header {
+    margin-top: 2em;
+}
+
 .post-it-framework {
     position: absolute;
     top: -3.5em;
@@ -63,6 +73,11 @@ body {
     font-weight: lighter;
     font-size: smaller;
     text-align: center;
+}
+
+.eye-catcher {
+    font-size: xx-large;
+    display: block;
 }
 
 @media (max-width: 1285px) {
