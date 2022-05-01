@@ -75,6 +75,10 @@ body {
     background-size: contain;
 }
 
+#association-header {
+    margin-bottom: 2.5em;
+}
+
 #about-side-panel {
     background: lightgray;
 }
@@ -117,6 +121,10 @@ body {
 .eye-catcher {
     font-size: xx-large;
     display: block;
+}
+
+.space_above {
+    margin-top: 1em;
 }
 
 @media (max-width: 1120px) {
