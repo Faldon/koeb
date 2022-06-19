@@ -65,6 +65,10 @@ body {
     padding: 1em;
 }
 
+h1.caption {
+    color: #a1c94b;
+}
+
 #corona-link {
     cursor: pointer;
 }
