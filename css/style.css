@@ -27,6 +27,7 @@ body {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    z-index: 9999;
 }
 
 
@@ -139,12 +140,12 @@ h1.caption {
     margin-top: 1em;
 }
 
-@media (max-width: 1284px) {
-    .post-it-framework {
-        display: none!important;
-    }
+@media (max-width: 1184px) {
     #content {
         margin-top: 215px!important;
+    }
+    #navigation {
+        margin-right: unset!important;
     }
 }
 
@@ -156,75 +157,3 @@ h1.caption {
         margin-top: 185px!important;
     }
 }
-
-/*@media (min-width: 781px) {*/
-/*    body {*/
-/*        padding-top: 165px;*/
-/*        margin-bottom: 40px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 780px) {*/
-/*    body {*/
-/*        padding-top: 205px;*/
-/*        margin-bottom: 40px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 767px) {*/
-/*    body {*/
-/*        padding-top: 125px;*/
-/*        margin-bottom: 40px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 588px) {*/
-/*    body {*/
-/*        padding-top: 175px;*/
-/*        margin-bottom: 40px;*/
-/*    }*/
-/*}*/
-
-/*.bottom-aligned {*/
-/*    display: inline;*/
-/*    vertical-align: bottom;*/
-/*    float: none;*/
-/*}*/
-
-/*.horizontal-padding {*/
-/*    padding-top: 5px;*/
-/*    padding-bottom: 5px;*/
-/*}*/
-
-/*.no-padding {*/
-/*    padding: 0;*/
-/*}*/
-
-/*.opac-list {*/
-/*    list-style-type: none;*/
-/*    padding-left: 0;*/
-/*}*/
-
-/*.opac-list li:before {*/
-/*    content: "- ";*/
-/*}*/
-
-/*ol.toc-list {*/
-/*    counter-reset: item;*/
-/*    -webkit-padding-start: 20px;*/
-/*    padding-left: 20px;*/
-/*}*/
-
-/*ol.toc-list li {*/
-/*    display: block*/
-/*}*/
-
-/*ol.toc-list li:before {*/
-/*    content: counters(item, ".")" ";*/
-/*    counter-increment: item*/
-/*}*/
-
-/*#site-footer > .navbar {*/
-/*    min-height: 40px;*/
-/*    height: 40px;*/
-/*}*/
