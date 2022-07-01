@@ -141,9 +141,6 @@ h1.caption {
 }
 
 @media (max-width: 1184px) {
-    #content {
-        margin-top: 215px!important;
-    }
     #navigation {
         margin-right: unset!important;
     }
